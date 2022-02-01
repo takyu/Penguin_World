@@ -1,0 +1,99 @@
+{
+  // Topic path that appears above
+  "breadcrumbs.enabled": true,
+
+  // CodeLens
+  "editor.codeLens": true,
+
+  // Mini-map that appears on the right
+  "editor.minimap.enabled": false,
+
+  // Indentation guide
+  "editor.renderIndentGuides": true,
+
+  // The status bar that appears at the bottom
+  "workbench.statusBar.visible": true,
+
+  // Space where breakpoints are displayed
+  "editor.glyphMargin": true,
+
+  // Code folding
+  "editor.folding": true,
+
+  // Color of line number and line highlight
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#222222",
+    "editorLineNumber.foreground": "#3f3f3f",
+    "editorLineNumber.activeForeground": "#51ff00"
+  },
+
+  // ESLint
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Disable VSCode's default CSSlinter because it does not support PostCSS
+  "css.validate": false,
+
+  // Use stylelint instead of CSSlinter
+  "stylelint.enable": true,
+
+  // Form every save
+  "editor.formatOnSave": true,
+
+  // But, markdown files are not formed.
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+
+  "editor.codeActionsOnSave": {
+    // Sort the imports alphabetically every save
+    "source.organizeImports": true,
+
+    // Format with ESLint when saving files
+    "source.fixAll.eslint": true
+  },
+
+  // Set the default code formatter to prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Disable copying empty lines
+  "editor.emptySelectionClipboard": false,
+
+  // Display special characters
+  "editor.renderControlCharacters": true,
+
+  // tab size
+  "editor.tabSize": 2,
+
+  /* 
+  Display whitespace
+
+  "none": do not display whitespace characters
+  "boundary": display all but a single whitespace character separating words
+  "all": display all whitespace characters
+	*/
+  "editor.renderWhitespace": "boundary",
+
+  // Whether or not the tab key is automatically converted to a space character when it is pressed
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.comments.insertSpace": true,
+
+  // Do not close selected files even if they are not edited
+  "workbench.editor.enablePreview": false,
+
+  // Icon theme
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Specify the files not to be displayed in VSCode
+  "files.exclude": {
+    //"**/Pnode_modules": true
+  },
+
+  // Set a vertical line at the 80th character.
+  "editor.rulers": [80]
+}

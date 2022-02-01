@@ -1,0 +1,28 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2022,
+
+    "sourceType": "module"
+  },
+
+  // ESLint's recommended rules
+  "extends": [
+    "eslint:recommended"
+    // "prettier"
+  ],
+
+  /*
+	off: do not apply the rule
+	warn: issue a warning
+	error: throw an error
+	*/
+  "rules": {
+    // "no-empty": "error"
+    "no-unused-vars": "off"
+  },
+
+  // JavaScript execution environment
+  "env": {
+    "browser": true
+  }
+}

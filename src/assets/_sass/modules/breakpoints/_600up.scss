@@ -1,0 +1,63 @@
+/******************************************************************
+
+Stylesheet: Apply a tablet or monitor of 600px or more
+
+******************************************************************/
+
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header {
+  .logo {
+    font-size: 38px;
+    justify-content: center;
+  }
+}
+
+.penguins {
+  &__item {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+.habitats {
+  &__container {
+    justify-content: space-between;
+  }
+  &__btn {
+    margin-top: 60px;
+  }
+  &__item {
+    flex-basis: 47%;
+  }
+}
+
+.introduction {
+  &__inner {
+    padding: 50px;
+  }
+
+  &__img,
+  &__texts {
+    flex-basis: 47%;
+  }
+
+  &__texts {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer {
+  .logo {
+    justify-content: flex-start;
+  }
+
+  &__li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}

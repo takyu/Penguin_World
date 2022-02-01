@@ -1,0 +1,20 @@
+/******************************************************************
+
+Stylesheet: Apply a monitor of 1280px or higher
+
+******************************************************************/
+.introduction {
+  &__inner {
+    padding: 50px 150px;
+  }
+}
+
+.habitats {
+  &__item {
+    flex-basis: 23%;
+  }
+}
+
+.side {
+  display: block;
+}

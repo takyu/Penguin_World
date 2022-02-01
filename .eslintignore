@@ -1,0 +1,6 @@
+webpack.config.js
+node_modules/
+dist/
+
+# ignore vendor directories
+src/js/vendors

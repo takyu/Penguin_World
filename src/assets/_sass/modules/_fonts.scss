@@ -1,0 +1,14 @@
+$font-path: "../../fonts/";
+
+@font-face {
+  font-family: "jp-font";
+
+  src: url("#{$font-path}Noto_Sans_JP/NotoSansJP-Regular.otf");
+}
+
+@font-face {
+  font-family: "en-font";
+
+  src: url("#{$font-path}Kameron/Kameron-Bold.ttf"),
+    url("#{$font-path}Kameron/Kameron-Regular.ttf");
+}
