@@ -9,7 +9,8 @@
     "dstart": "NODE_ENV=development webpack serve --progress --mode development",
     "pstart": "webpack serve --progress --mode production",
     "watch": "NODE_ENV=development webpack --watch --color --progress --mode development",
-    "brl": "browserslist"
+    "brl": "browserslist",
+    "deploy": "gh-pages -d dist"
   },
   "author": "takyu",
   "license": "MIT",
@@ -27,6 +28,7 @@
     "eslint": "^8.7.0",
     "favicons": "^6.2.2",
     "favicons-webpack-plugin": "^5.0.2",
+    "gh-pages": "^3.2.3",
     "html-loader": "^3.1.0",
     "html-webpack-injector": "^1.1.4",
     "html-webpack-plugin": "^5.5.0",
