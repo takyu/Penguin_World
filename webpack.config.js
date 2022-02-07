@@ -339,7 +339,17 @@ const webpackConfig = {
       // Choose in "false, 'head', 'body', true"
       // inject: "body",
 
-      minify: false,
+      minify: true,
+
+      /**
+       * scriptLoading: {'blocking'|'defer'|'module'}
+       *
+       * Modern browsers support non blocking javascript loading ('defer')
+       * to improve the page startup performance.
+       * Setting to 'module' adds attribute type="module".
+       * This also implies "defer", since modules are automatically deferred.
+       */
+      scriptLoading: "blocking",
 
       /**
        * Use with HtmlWebpackInjector.
