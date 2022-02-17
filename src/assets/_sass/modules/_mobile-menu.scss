@@ -31,8 +31,8 @@ $cMenuClose: $cAqua;
     perspective: 2000px;
     transform-style: preserve-3d;
 
-    &.bottom {
-      padding: 30px 20px;
+    &-bottom {
+      padding: 20px;
     }
   }
   &__item {
@@ -45,7 +45,7 @@ $cMenuClose: $cAqua;
   }
   &__link {
     display: block;
-    margin-top: 30px;
+    margin-top: 40px;
     color: $cBlack;
     text-decoration: none !important;
   }

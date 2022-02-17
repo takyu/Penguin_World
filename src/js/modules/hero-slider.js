@@ -9,16 +9,13 @@ class HeroSlider {
   _initSwuiper() {
     return new Swiper(this.el, {
       loop: true,
-      effect: "coverflow",
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
       centeredSlides: true,
       slidesPerView: 1,
-      speed: 1000,
-      breakpoints: {
-        1024: {
-          slidesPerView: 2,
-        },
-      },
-      grabCursor: true,
+      speed: 3000,
     });
   }
 

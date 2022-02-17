@@ -132,12 +132,15 @@ main {
   }
 
   &__li {
-    margin-left: 20px;
+    margin-left: 40px;
 
     > a {
       color: $cBlack;
       text-decoration: none;
-      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -336,6 +339,7 @@ main {
 
   &__ul {
     @extend .flex;
+    flex-direction: row;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -353,6 +357,10 @@ main {
   .logo {
     font-size: 32px;
     justify-content: center;
+  }
+
+  &__copyright {
+    margin-top: 50px;
   }
 }
 
