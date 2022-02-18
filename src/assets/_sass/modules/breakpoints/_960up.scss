@@ -28,6 +28,10 @@ Stylesheet: Apply a monitor of 960px or higher
   padding-bottom: 150px !important;
 }
 
+.content-width {
+  width: 95%;
+}
+
 .swiper-slide {
   box-shadow: 0 8px 40px -10px $cSwiperShadow;
 }

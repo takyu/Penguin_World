@@ -42,12 +42,32 @@ $cMenuClose: $cAqua;
     padding: 0 40px;
     transition: transform 0.5s, opacity 0.5s;
     opacity: 0;
+
+    &__sns {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 100px;
+    }
+
   }
+
   &__link {
     display: block;
     margin-top: 40px;
     color: $cBlack;
     text-decoration: none !important;
+    
+    &:hover {
+      color: $cAqua;
+    }
+
+    &__sns {
+      > img {
+          width: 30px;
+          height: 30px;
+      }
+    }
+
   }
   &__btn {
     background-color: transparent;

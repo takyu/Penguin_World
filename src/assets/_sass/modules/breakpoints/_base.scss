@@ -139,7 +139,8 @@ main {
       text-decoration: none;
 
       &:hover {
-        text-decoration: underline;
+        color: $cAqua;
+        text-decoration: underline $cAqua;
       }
     }
   }
@@ -206,11 +207,13 @@ main {
     }
 
     &.inview {
-      box-shadow: inset 0 0 100px $cAqua;
+      box-shadow: 12px 12px 8px 1px $cAqua;
     }
   }
 
   &__texts {
+    margin-top: 20px;
+
     &.inview {
       .introduction__title::before {
         transform: translateY(-50%);
@@ -336,10 +339,12 @@ main {
     align-items: center;
     text-align: center;
   }
-
+  
   &__ul {
     @extend .flex;
     flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8em;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -394,8 +399,8 @@ main {
 
   &.right {
     top: 55%;
-
     right: -50px;
+
     &.inview {
       right: 50px;
     }
