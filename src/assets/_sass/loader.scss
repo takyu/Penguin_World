@@ -36,9 +36,9 @@
 		font-size: 2em;
 	
 		// font-stack
-		font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
+		font-family: 'en-font', sans-serif;
 	
-		color: $cSubTitle;
+		color: $cAqua;
 	}
 }
 
@@ -47,15 +47,16 @@
 }
 
 .pace-progress-inner {
-	width: 40px;
-	height: 40px;
-	background-color: $cAqua;
+	width: 80px;
+	height: 80px;
+	background-image: url(../../images/svg/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 	margin: 0 auto;
-	margin-bottom: 10px;
 
 	@include animation (
 		$name: sk-rotateplane,
-		$duration: 1.2s,
+		$duration: 2.5s,
 		$iteration-count: infinite,
 		$timing-function: ease-in-out,
 		$fill-mode: forwards
@@ -66,13 +67,19 @@
 @keyframes sk-rotateplane {
 
 	0% {
-		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		transform: perspective(120px) rotateY(0deg);
+	}
+	25% {
+		transform: perspective(120px) rotateY(-180deg);
 	}
 	50% {
-		transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+		transform: perspective(120px) rotateY(0deg);
+	}
+	75% {
+		transform: perspective(120px) rotateY(180deg);
 	}
 	100% {
-		transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+		transform: perspective(120px) rotateY(0deg);
 	}
 
 }

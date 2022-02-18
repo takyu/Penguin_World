@@ -132,7 +132,7 @@ class Main {
       once: false,
     });
     this.observers = new sor(".cover-slide", this.#inviewAnimation, {
-      rootMargin: "-150px 0px",
+      rootMargin: "-100px 0px",
     });
     this.observers = new sor(".appear", this.#inviewAnimation);
     this.observers = new sor(".tween-animate-title", this.#textAnimation, {
